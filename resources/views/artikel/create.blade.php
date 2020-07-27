@@ -41,6 +41,9 @@
                             <button type="submit" class="btn btn-primary">
                                 Tambahkan
                             </button>
+                            <a href="{{ url()->previous() }}" class="btn btn-secondary">
+                                kembali
+                            </a>
                         </form>
                     </div>
                 </div>

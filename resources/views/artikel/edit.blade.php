@@ -40,8 +40,11 @@
                                 <input type="file" name="gambar" id="gambar" class="form-control-file" placeholder="" aria-describedby="gambar">
                             </div>
                             <button type="submit" class="btn btn-primary">
-                                Tambahkan
+                                update
                             </button>
+                            <a href="{{ url()->previous() }}" class="btn btn-secondary">
+                                kembali
+                            </a>
                         </form>
                     </div>
                 </div>

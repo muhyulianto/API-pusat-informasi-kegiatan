@@ -9,7 +9,7 @@
                         Info detail artikel
                     </div>
                     <div class="card-body d-flex">
-                        <div class="w-50 p-2">
+                        <div class="w-50 px-3">
                             <img src="{{ asset('storage/'.$artikel->gambar) }}" class="img-fluid" alt="">
                         </div>
                         <table class="table">
@@ -30,6 +30,11 @@
                                 </td>
                             </tr>
                         </table>
+                    </div>
+                    <div class="card-footer">
+                        <a href="{{ url()->previous() }}" class="btn btn-secondary">
+                            kembali
+                        </a>
                     </div>
                 </div>
             </div>

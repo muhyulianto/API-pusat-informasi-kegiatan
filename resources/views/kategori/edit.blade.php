@@ -17,8 +17,11 @@
                                 <input type="text" name="nama" id="nama" value="{{ $kategori->nama }}" class="form-control" placeholder="" aria-describedby="nama">
                             </div>
                             <button type="submit" class="btn btn-primary">
-                                Tambahkan
+                                update
                             </button>
+                            <a href="{{ url()->previous() }}" class="btn btn-secondary">
+                                kembali
+                            </a>
                         </form>
                     </div>
                 </div>
