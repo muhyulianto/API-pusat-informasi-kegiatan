@@ -2,7 +2,12 @@
 
 ## Penjelasan
 
-Sebuah web api yang dibuat dengan Laravel 7. Bagi admin terdapat admin panel CRUD untuk mengelola artikel dan kategori. Selain itu terdapat 4 api endpoint yang bisa digunakan untuk mengakses data artikel maupun kategori.
+Sebuah web api yang dibuat dengan Laravel 7. Bagi admin terdapat admin panel CRUD untuk mengelola artikel dan kategori. Selain itu terdapa 4 api endpoint yang bisa digunakan untuk mengakses data artikel maupun kategori.
+
+## Akun admin
+
+    Email: admin@test.com
+    Password: 12345678
 
 ## Desain database
 
