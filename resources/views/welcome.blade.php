@@ -83,8 +83,8 @@
                 </div>
 
                 <div class="links">
-                    <a href="#">GitHub</a>
-                    <a href="#">Documentation</a>
+                    <a href="https://github.com/muhyulianto/API-pusat-informasi-kegiatan">GitHub</a>
+                    <a href="https://documenter.getpostman.com/view/10669252/T1Dqhced?version=latest">Api documentation</a>
                     <a href="#">Demo video</a>
                 </div>
             </div>
