@@ -8,8 +8,8 @@ use Illuminate\Http\Request;
 
 class ApiController extends Controller
 {
-    public function artikels() {
-        $artikels = Artikel::all();
+    public function artikels(Request $request) {
+        $artikels = Artikel::where('judul', 'LIKE', '%'.$request->judul.'%')->get();
         return response()->json($artikels);
     }
 
@@ -23,14 +23,9 @@ class ApiController extends Controller
         return response()->json($kategoris);
     }
 
-    public function cariArtikels(Request $request) {
-        $artikels = Artikel::where('judul', 'LIKE', '%'.$request->judul.'%')->get();
-        return response()->json($artikels);
-    }
-
-    public function filterArtikels(Request $request) {
-        $artikels = Artikel::whereHas('kategoris', function ($query) use ($request) {
-            $query->where('nama', $request->kategori);
+    public function filterArtikels($kategori) {
+        $artikels = Artikel::whereHas('kategoris', function ($query) use ($kategori) {
+            $query->where('nama', $kategori);
         })->get();
 
         return response()->json($artikels);

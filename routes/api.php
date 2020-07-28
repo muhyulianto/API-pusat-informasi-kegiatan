@@ -18,9 +18,8 @@ Route::prefix('v1')->group(function () {
     Route::prefix('artikels')->group(function () {
         Route::get('/', 'ApiController@artikels');
         Route::get('/{id}', 'ApiController@artikelDetail');
+        Route::get('/filter/{kategori}', 'ApiController@filterArtikels');
     });
 
     Route::get('kategoris', 'ApiController@kategoris');
-    Route::get('cari/artikels', 'ApiController@cariArtikels');
-    Route::get('filter/artikels', 'ApiController@filterArtikels');
 });
