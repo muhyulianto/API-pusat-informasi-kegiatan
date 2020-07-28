@@ -36,7 +36,7 @@
                                         @forelse ($artikel->kategoris as $kategori)
                                             {{ $kategori->nama . "," }}
                                         @empty
-                                            Kosong
+                                            Uncategorized
                                         @endforelse
                                     </td>
                                     <td>
@@ -57,7 +57,7 @@
                                 </tr>
                                 @empty
                                     <tr>
-                                        <td colspan="3" class="text-center">
+                                        <td colspan="4" class="text-center">
                                             Data tidak ditemukan
                                         </td>
                                     </tr>
